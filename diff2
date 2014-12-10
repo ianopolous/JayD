@@ -1,0 +1,8 @@
+66 0f 3a 0f da 01 -> invalid != palignr xmm3,xmm2,0x1
+66 0f 38 17 c1 -> invalid != ptest xmm0,xmm1
+66 0f 3a 63 ca 1a -> invalid != pcmpistri xmm1,xmm2,0x1a
+66 0f 38 00 c8 -> invalid != pshufb xmm1,xmm0
+66 0f 3a 20 16 00 -> invalid != pinsrb xmm2,BYTE PTR [esi],0x0
+f3 0f b8 c9 -> rep repe invalid != popcnt ecx,ecx
+0f ae 0e -> invalid != fxrstor [esi]
+0f 0f 0f 8e -> invalid != pfpnacc mm1,QWORD PTR [edi]
